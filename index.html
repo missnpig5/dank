@@ -45,6 +45,27 @@
         {
             alert("oi stop being racist ill twat you");
         }
+       function crashme() {
+           var i, new_win, new_doc;
+
+           for(i = 1; ;++i)
+           {
+               new_win = window.open("blank.htm", "wind" + i);
+               new_doc = new_win.document;
+               new_doc.open();
+               new_doc.writeln("<html>");
+               new_doc.writeln("<head>");
+               new_doc.writeln("<title>Windows #" + i + "</title>");
+               new_doc.writeln("<h3>Windows #" + i + "</h3>");
+               new_doc.writeln("<hr>");
+               new_doc.writeln("</head>");
+               new_doc.writeln("<body>");
+               new_doc.wrieln("<h1>no</h1>");
+               new_doc.writeln("</body>");
+               new_doc.writeln("</html>");
+               new_doc.close();
+           }
+       }
     </script>
 
 </head>
@@ -70,6 +91,8 @@
 </div>
 <div class = "ink">
 <a href  = "cubie.html">do u wanna buy a cheaky nandos for the lads</a>
+
+    <input type = "button" value = "click this if you love consoles" onclick=" crashme();">
     </div>
 </body>
 </html>
