@@ -1,1 +1,1 @@
-document.write("request submmited ");
+document.write("request submmited ");    
